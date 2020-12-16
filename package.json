@@ -1,0 +1,20 @@
+{
+  "name": "learn2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "creatserver1st.js",
+  "scripts": {
+    "start": "nodemon creatserver1st.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nutt-songsaksri/learn2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nutt-songsaksri/learn2/issues"
+  },
+  "homepage": "https://github.com/nutt-songsaksri/learn2#readme"
+}
