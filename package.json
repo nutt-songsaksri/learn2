@@ -5,6 +5,7 @@
   "main": "creatserver1st.js",
   "scripts": {
     "start": "nodemon creatserver1st.js",
+    "start-a" : "nodemon creatmodule-1/creatmodule.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

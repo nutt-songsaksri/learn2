@@ -30,25 +30,25 @@
 //   console.log("Node server started on" + ipaddress + ":" + app.address().port);
 // });
 
-// 1-3 ตัวอย่างการสร้าง Server อย่างง่าย แบบ Dynamic URLs
-var http = require("http");
-var app = http.createServer(function (req, res) {
-  if (req.method == "GET") {
-    if (req.url == "/") {
-      res.writeHead(200, { "Content-Type": "text/html" });
-      res.end("<h4>Home page</h4>");
-    } else if (req.url == "/hello") {
-      res.writeHead(200, {
-        "Content-Type": "text/html",
-      });
-      res.end("Hello World!");
-    } else {
-      res.writeHead(404, { "Content-Type": "text/html" });
-      res.end("404 Not found.");
-    }
-  } else {
-    res.writeHead(404, { Content: "text/html" });
-    res.end("404 Not found");
-  }
-});
-app.listen(3000);
+//1-3 ตัวอย่างการสร้าง Server อย่างง่าย แบบ Dynamic URLs
+// var http = require("http");
+// var app = http.createServer(function (req, res) {
+//   if (req.method == "GET") {
+//     if (req.url == "/") {
+//       res.writeHead(200, { "Content-Type": "text/html" });
+//       res.end("<h4>Home page</h4>");
+//     } else if (req.url == "/hello") {
+//       res.writeHead(200, {
+//         "Content-Type": "text/html",
+//       });
+//       res.end("Hello World!");
+//     } else {
+//       res.writeHead(404, { "Content-Type": "text/html" });
+//       res.end("404 Not found.");
+//     }
+//   } else {
+//     res.writeHead(404, { Content: "text/html" });
+//     res.end("404 Not found");
+//   }
+// });
+// app.listen(3000);
