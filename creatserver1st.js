@@ -51,4 +51,26 @@
 //     res.end("404 Not found");
 //   }
 // });
-// app.listen(3000);
+// app.listen(3000, "0.0.0.0"); //ใส่ 0.0.0.0 รับทุกรีเควสที่ผ่านเข้ามาบน window เท่านั้น = เครื่องอื่นที่อยู่บน Local Network เดียวกันจะเปิดได้
+
+// 3-1 ตัวอย่างการใช้ url กับ http
+var http = require("http");
+var url = require("url");
+http
+  .createServer(function (req, res) {
+    var x = url.parse(req.url, true);
+    if (x.pathname == "/") {
+      console.log("bbb");
+      if (x.search != null) {
+        console.log(x.search);
+        res.end(JSON.stringify(x.query));
+      } else {
+        res.end("No query");
+        console.log("ddd");
+      }
+    } else {
+      res.statusCode = 404;
+      res.end("404 Not found.");
+    }
+  })
+  .listen(3000);
